@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #f5eee8;
+  color: #7a4b4b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+/* Sections */
+.top-section,
+.middle-section,
+.bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+/* Names */
+.names h1 {
+  font-size: 70px;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* Text */
+.text h2,
+.closing h2 {
+  font-size: 40px;
+  line-height: 1.4;
+}
+
+/* Details */
+.details p {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* Contact */
+.contact {
+  margin-top: 20px;
+}
+
+/* Image Styling */
+.image-box {
+  width: 300px;
+  height: 400px;
+  border-radius: 150px;
+  overflow: hidden;
+  border: 2px solid #d8c3b5;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Position adjustments */
+.left {
+  margin-right: 50px;
+}
+
+.right {
+  margin-left: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .top-section,
+  .middle-section,
+  .bottom-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .names h1 {
+    font-size: 50px;
+  }
+
+  .text h2,
+  .closing h2 {
+    font-size: 30px;
+  }
+
+  .image-box {
+    margin-bottom: 20px;
+  }
+}
